@@ -1,0 +1,329 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  ::webkitscrollbar {
+    display: none;
+  }
+}
+
+.signup-inputBtn button {
+  width: 100%;
+  height: 8vh;
+  margin: 1vh;
+  color: #efb3b3;
+  border-radius: 3vh;
+  background-color: #d21f1f;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+}
+/* peform part ---------------------------------------------------- */
+.peform {
+  background-color: #09141b;
+  color: white;
+  display: flex;
+}
+.side_bar {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height:100vh ;
+  background-color: #071d2a;
+  border-radius: 5%;
+  padding: 10px;
+}
+.side_bar h1 {
+  text-align: center;
+  font-size: 25px;
+}
+.heading2 {
+  display: flex;
+  font-size: 23px;
+  text-align: start;
+}
+.title1 {
+  font-weight: bold;
+  padding: 20px;
+  color: #e2e2e2;
+  text-align: left;
+}
+.title_log {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  color: #e2e2e2;
+  text-align: center;
+}
+.title_log h2 {
+  background-color: #8c8c8c;
+  padding: 5px;
+  border: none;
+  border-radius: 25px;
+  width: 150px;
+}
+.subjects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  gap: 6px;
+}
+.subjects .img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ffff;
+}
+.side_bar ul {
+  margin: 10px;
+  padding: 10px;
+}
+.side_bar ul li {
+  margin-bottom: 15px;
+}
+.title2 {
+  font-weight: bold;
+  color: #e2e2e2;
+  padding: 10px;
+  text-align: left;
+}
+.progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.progress .img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ffff;
+}
+
+.prog_line {
+  display: flex;
+  flex: collumn;
+  gap: 4px;
+}
+.line {
+  margin-left: 12px;
+  margin-top: 4vh;
+  width: 3%;
+  height: 20vh;
+  background-color: #8c8c8c;
+  border-radius: 10px;
+}
+.heading h1 {
+  padding-left: 40px;
+}
+
+/* Account setting part*************************** */
+
+.Acc-outerDiv {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.stuProfile-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2.5vh;
+}
+.stuProfile {
+  height: 10vh;
+  width: 10vh;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+.stuProfile-icon {
+  height: 2.9vh;
+  width: 2.9vh;
+  border: 2px solid black;
+  position: absolute;
+  border-radius: 50%;
+  left: 70%;
+}
+.names h1 {
+  font-size: 2vh;
+}
+.SideNav2 {
+}
+.outer-box {
+  position: absolute;
+  /* background-color: rgba(255,255,255,0.2); */
+  background-color: rgba(0, 0, 0, 0.29);
+  color: white;
+  /* background-color */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+}
+.outer-box h1 {
+  font-size: 7vh;
+  font-weight: 700;
+  text-wrap: wrap;
+}
+.outer-box p {
+  font-size: 3vh;
+  font-weight: lighter;
+  text-wrap: wrap;
+}
+.outer-box button {
+  background-color: #d21f1f;
+  height: 6vh;
+  width: 16vw;
+  margin: 2vh;
+  border-radius: 3vh;
+  padding: 1.7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg {
+  background-image: url("https://s3-alpha-sig.figma.com/img/f896/b652/372b609d38d6fb35b77830ec04155c9b?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hms4Xj6dWFg-zEqAooQia9T~WBLWISe76XJPuqai7-AAT6M5vJS6EbftKoFUfJEvkSCyUwsQu~9AQhjWyVrF9EqdXJz9-4W15ErVAVlqu9Ns4fRvlKs~nzW0xs8snYGIRzIsZ4Wx7V0SwgFsEe2oMzyLXBdcdM99K9eoQCdBpU7RPKHRVo1dFZ5jiNmw09MsyYqw3RXAlwmv3H8za~ly83vP9vBc8W1lfkTx0glmj-V3Y5krqlSQkbKCLPBDdgFweTchjBrn-GiMwnuq3vNH6mFWvtfjaFh52mCrAH4WSUmMJaC5ywTZTThgT~qKquNPBREPgKCOHz8WD3mbYXuXkA__");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+.nav {
+  background-color: #09141b;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav h1 {
+  margin-left: 3vw;
+  color: white;
+}
+.nav button {
+  cursor: pointer;
+  margin: 2vh;
+  color: white;
+  text-align: center;
+  /* justify-content: center; */
+}
+#second {
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 0.5vh 1vw 0.5vh 1vw;
+  border-radius: 2vh;
+}
+#third {
+  border: 2px solid #d21f1f;
+  background-color: #d21f1f;
+  padding: 0.5vh 1vw 0.5vh 1vw;
+  text-align: center;
+  border-radius: 2vh;
+}
+.nav div {
+  margin-right: 2vw;
+}
+
+.platform-learning {
+  background-color: #09141b;
+  width: 100%;
+  height: 100vh;
+  padding: 5vh;
+}
+.platform h1 {
+  font-size: 7vh;
+  font-weight: 700;
+  text-wrap: wrap;
+  color: white;
+}
+.platform p {
+  font-size: 3vh;
+  font-weight: lighter;
+  text-wrap: wrap;
+  color: white;
+}
+
+/* our purpous -------------------------------- */
+
+.heading h2 {
+  width: 584px;
+  height: 47px;
+
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 130%;
+  color: #65A30D;
+  flex: none;
+  
+  
+
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+@media screen and (max-width :760px) {
+  .background1{
+      height: 200vh;
+
+    }
+  .width3{
+    width: 80%;
+  }
+  .🎖️{
+    margin-top: 50vh;
+  }
+  .navigation{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  
+}
+@media screen and (max-width :660px) {
+  .background1{
+      height: 150vh;
+    }
+  
+}
+.hell img{
+  border-radius: 15%;
+  object-fit: cover;
+  display: flex;
+  /* flex-direction: column; */
+  position: relative;
+  margin-top: 6vh ;
+  background-color: #ffff;
+  color: aliceblue;
+}
